@@ -111,18 +111,26 @@ export default function Home() {
       <div className="relative z-20">
         
         {/* Cabeçalho */}
-        <header className="pt-8 pb-4 flex flex-col items-center max-w-7xl mx-auto border-b border-white/10">
-          <div className="flex flex-col items-center mb-4 drop-shadow-lg">
-            <img src="/images/logo.png" alt="InovCell Logo" className="w-16 h-16 mb-2 object-contain" />
-            <div className="text-2xl font-bold tracking-tighter">
-              Inov<span className="text-[#00A859]">Cell</span>
-            </div>
-          </div>
-          <nav className="flex gap-6 text-sm font-medium">
-            <a href="#servicos" className="hover:text-[#00A859] transition">Serviços</a>
-            <a href="#rastreio" className="hover:text-[#00A859] transition">Rastrear OS</a>
-          </nav>
-        </header>
+<header className="pt-8 pb-4 flex flex-col items-center max-w-7xl mx-auto border-b border-transparent">
+  
+  {/* Contêiner da Logo com o efeito de Transparência Glassmorphism */}
+  <div className="flex flex-col items-center mb-6 p-6 block bg-black/30 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#00A859] hover:scale-105 hover:shadow-2xl hover:shadow-[#00A859]/20 cursor-pointer group">
+    <img 
+      src="/images/logo.png" 
+      alt="InovCell Logo" 
+      className="w-16 h-16 mb-2 object-contain transition-transform duration-500 group-hover:scale-110" 
+    />
+    <div className="text-2xl font-bold tracking-tighter drop-shadow-md">
+      Inov<span className="text-[#00A859]">Cell</span>
+    </div>
+  </div>
+
+  {/* Navegação */}
+  <nav className="flex gap-6 text-sm font-medium bg-black/20 px-6 py-2 rounded-full backdrop-blur-sm border border-white/5">
+    <a href="#servicos" className="hover:text-[#00A859] transition">Serviços</a>
+    <a href="#rastreio" className="hover:text-[#00A859] transition">Rastrear OS</a>
+  </nav>
+</header>
 
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center text-center px-4 py-24 md:py-32 w-full max-w-4xl mx-auto">
