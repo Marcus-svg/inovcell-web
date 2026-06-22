@@ -32,7 +32,7 @@ const serviçosInovCell = [
 // Configuração Responsiva de Fundo Otimizado
 const fundosOtimizados = [
   {
-    mobile: '/images/fundo_mobile_otimizado1.png', // Nova imagem mobile limpa e escura
+    mobile: '/images/fundo_mobile_otimizado1.webp', // Nova imagem mobile limpa e escura
     desktop: '/images/fundo_desktop_otimizado1.jpg', // Nova imagem desktop panorâmica
     alt: 'Fachada Profissional InovCell'
   },
